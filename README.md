@@ -11,12 +11,12 @@ Using Tar Pit tricks, timeouts and old TCP tricks to slow down scanners.
 Keep browsers, requests, wget and stuff like that open as long as possible.
 
 Scapy Automaton Based
-
+```
 Begin -> WAIT ----------------|---- ON ARP whos-has ----> ARPMAP ->-|
          /|\                  |                                     |-- on timeout->-spoof unallocated---|   
           |-<-reply-<-on ICMP-|                                     |-- on is-at reply ->----------------|
           |-<-reply-<-on PING-|                                                                          |
           |-<-tarpit-<-on SYN-|                                                                          |
           |----------------------------------------------------------------------------------------------|
-          
+```
           
